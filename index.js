@@ -45,8 +45,8 @@ app.post('/getrates', bodyparser.json(),function(req, res, next) {
   }
 });
 
-// setInterval(function() {  //it will delete cache[rates] in every minute so that we get the updated response
-//   delete cache.rates;
-// }, 60 * 1000)
+setInterval(function() {  //it will delete cache[rates] in every minute so that we get the updated response
+  delete cache.rates;
+}, 60 * 1000)
 
 app.listen(PORT)
