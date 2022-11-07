@@ -52,7 +52,7 @@ setInterval(function (){
    cache.hour=0;
    cache.minutes=0;
    cache.oldHour=0;
-   cache.old minute=0;
+   cache.oldMinute=0;
 },86400000)
 
 
